@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "React Extension Template",
+  "version": "0.1",
+  "description": "",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "css" : ["main.css"],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "permissions": [
+      "storage",
+      "tabs"
+  ]
+}
